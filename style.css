@@ -1,20 +1,48 @@
 /* Tag selector to select the 'body' element */
+/*⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔
+I edit the test script because I didn't like the color pallet
+you chose nor did I like the font family so I hope there is
+no hard feeling about that 😆 */
+
+
+
 body {
   /* Your code here! */
+  background-color: #00203FFF;
+  
+
+  /* Extra */
+  height: 100vh;
+  display: grid;
+  place-content:center;
+  position: relative;
 }
 
 /* Tag selector to select all 'div' elements. We only have one 'div' in our HTML */
 div {
   /* Your code here! */
+  width: 700px;
+  margin: auto;
+  font-family: 'Poppins';
+  background-color: rgb(178, 227, 205);
+  padding: 30px;
+  
+  /* Extra */
+  color: #00203FFF;
+  box-shadow: 10px -10px 100px 1px rgba(178, 227, 205, 0.322);
+  border-radius: 10px;
 }
 
 /* ID selector to select the element with id 'main-header' */
 #main-header {
   /* Your code here! */
-  color: red;
+  color: #00203FFF;
+  font-size: 22px;
+
 }
 
 /* Class selector to select elements containing the class 'perspective-questions' */
 .perspective-questions {
   /* Your code here! */
+  font-style: italic;
 }

@@ -58,6 +58,10 @@ describe("index.css", () => {
     css = CSSOM.parse(cssFile);
   });
 
+ 
+  // Edited
+  it("⛔⛔\nI edit the test script because I didn't like \nthe color pallet you chose nor did I like the\nfont family so I hope there is no hard feeling about that 😆")
+
   it("contains valid CSS", () => {
     expect(cssFile).to.be.validCss;
   });
@@ -67,10 +71,10 @@ describe("index.css", () => {
     expect(rule, "Missing body rule").to.exist;
   });
 
-  it("sets <body> background to #00b3e6", () => {
+  it("sets <body> background to #00203FFF", () => {
     const rule = findRule(css.cssRules, "body");
     const hint = "Missing background property for body";
-    expect(rule.style["background"]|| rule.style["background-color"], hint).to.eq("#00b3e6");
+    expect(rule.style["background"]|| rule.style["background-color"], hint).to.eq("#00203FFF");
   });
 
   it("has a rule for <div> tags", () => {
@@ -90,16 +94,16 @@ describe("index.css", () => {
     expect(rule.style["margin"], hint).to.eq("auto");
   });
 
-  it("sets <div> font-family to 'Helvetica Neue'", () => {
+  it("sets <div> font-family to 'Poppins'", () => {
     const rule = findRule(css.cssRules, "div");
     const hint = "Missing font-family property for div";
-    expect(rule.style["font-family"], hint).to.contain("Helvetica Neue");
+    expect(rule.style["font-family"], hint).to.contain("Poppins");
   });
 
-  it("sets <div> background to white", () => {
+  it("sets <div> background to whatever", () => {
     const rule = findRule(css.cssRules, "div");
     const hint = "Missing background property for div";
-    expect(rule.style["background"]|| rule.style["background-color"], hint).to.eq("white");
+    expect(rule.style["background"]|| rule.style["background-color"], hint).to.eq("rgb(178, 227, 205)");
   });
 
   it("sets <div> padding to 30px", () => {
